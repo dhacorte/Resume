@@ -1,0 +1,168 @@
+
+h1 {text-align: center;}
+header {text-align: center;}
+footer {text-align: center;}
+img {text-align: center;}
+h3 {text-align: center;}
+
+
+
+/* navigation button*/
+body {
+  	background-image: url(Images/BG1.jpg);
+  	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+  	background-size: 100% 100%;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+
+li a {
+  font-family: 'Oswald', sans-serif;		
+  font-size: 25px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 70px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/*PERSONAL INFO DASHED BOX*/
+div {
+  outline-style: dashed;
+  background-color: none;
+  width: 500px;
+  border: none;
+  padding: 30px;
+
+}
+
+/*REFERENCE DASHED BOX*/
+div.personal {
+  outline-style: dashed;
+  background-color: lightgrey;
+  opacity: 0.9;
+  width: 600px;
+  border: none;
+  padding: 30px;
+  margin-left: 350px;
+  margin-top: 10px;
+
+
+}
+
+/*IMAGE IN PERSONAL INFO*/
+a.move{
+  position: relative;
+  top: 190px;
+  left: 700px;
+}
+
+/*IMAGE IN AWARDS*/
+a.move1{
+  position: relative;
+  top: 10px;
+  left: 550px;
+}
+a.move2{
+  position: relative;
+  top: 0px;
+  left: 550px;
+}
+a.move3{
+  position: relative;
+  top: 0px;
+  left: 300px;
+}
+
+/*PROFILE PIC*/
+img.border{
+	border-color: black;
+	border-width: 5px;
+	border-style: solid;
+}
+img.profile{
+	border-radius: 450px;
+	margin-top: 50px;
+	margin-left: 50px;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	height: 150px;
+	width: 150px;
+
+}
+
+/*Hi I'M DHALE */
+h2.hi{
+
+	font-family: 'Oswald', sans-serif;
+	font-size: 60px;
+	margin-left: 250px;
+	width: auto;
+	width: 20vw;
+	margin-top: -180px;
+	
+}
+
+
+
+/*FONT IN EDUCATIONAL BKG.*/
+h1.edu{
+	font-family: Brush Script MT,cursive;
+	font-size: 70px;
+}
+h1.edu1{
+	font-family: Brush Script MT,cursive;
+	font-size: 70px;
+	text-align: left;
+}
+/*Tertiary*/
+p.ter{
+	align-self: center;
+	text-align: center;
+	outline-style: dashed;
+	padding: 30px;
+	width: 500px;
+	margin-left: 350px;
+}
+
+
+/*SHORT INTRO*/
+div.arrange{
+	background-color: lightgrey;
+	opacity: 0.9;
+	outline-color: black;
+
+
+
+}
+
+div.edu{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	width: 30vw;
+	margin-left: 20px;
+
+}
+
+iframe.center{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+
+}
