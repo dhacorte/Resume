@@ -11,7 +11,7 @@ h3 {text-align: center;}
 body {
   	background-image: url(Images/BG1.jpg);
   	background-repeat: no-repeat;
- 	background-attachment: fixed;
+  	background-attachment: fixed;
   	background-size: 100% 100%;
 }
 
@@ -19,7 +19,7 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 10;
+  padding: 0;
   overflow: hidden;
   background-color: #333;
 }
@@ -33,7 +33,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 70px;
+  padding: 20px 60px;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ li a:hover {
 }
 
 /*PERSONAL INFO DASHED BOX*/
-div {
+.div {
   outline-style: dashed;
   background-color: none;
   width: 500px;
@@ -66,10 +66,17 @@ div.personal {
 }
 
 /*IMAGE IN PERSONAL INFO*/
-a.move{
-  position: relative;
-  top: 190px;
-  left: 700px;
+.move{
+
+  margin-left: 30%;
+  margin-top: 5%;
+  height: auto;
+  width: 40%;
+  font-size: 20px;
+}
+
+.photo{
+  margin-bottom: 20%;
 }
 
 /*IMAGE IN AWARDS*/
@@ -95,6 +102,7 @@ img.border{
 	border-width: 5px;
 	border-style: solid;
 }
+
 img.profile{
 	border-radius: 450px;
 	margin-top: 50px;
@@ -104,6 +112,33 @@ img.profile{
 	width: auto;
 	height: 150px;
 	width: 150px;
+
+}
+
+img.profile1{
+  border-radius: 450px;
+  margin-top: 50px;
+  margin-left: 40%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  height: auto;
+  width: 20%;
+
+
+
+}
+
+
+img.profile2{
+  border-radius:100%;
+  margin-top: 100px;
+  margin-left: 39%;
+  height: auto;
+  width: 22%;
+  height: 325px;
+
+
 
 }
 
@@ -132,13 +167,13 @@ h1.edu1{
 	text-align: left;
 }
 /*Tertiary*/
-p.ter{
-	align-self: center;
+.ter{
 	text-align: center;
 	outline-style: dashed;
-	padding: 30px;
-	width: 500px;
-	margin-left: 350px;
+	width: 50%;
+	margin-left: 25%;
+  margin-top: 5%;
+  font-size: 20px;
 }
 
 
@@ -165,4 +200,127 @@ iframe.center{
 	margin-right: auto;
 	width: 100%;
 
+}
+
+.button {
+  
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+.button1 {width: 250px; background-color: red;}
+.button2 {width: 300px; background-color: green;}
+.button3 {width: 500px;  background-color:  blue;}
+.button4 {width: 300px;  background-color:  cyan; margin-bottom: 20%;}
+
+.reference{
+  text-align: center;
+  font-size: 4vw;
+}
+.fb{
+  margin-left: 40%;
+  height: auto;
+  width: 20%;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  margin-left: 30%
+
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 0.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 1px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: var(--main-gray);
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: var(--main-red);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
 }
